@@ -147,7 +147,7 @@
       ],
       "size": [
         420,
-        230
+        280
       ],
       "flags": {},
       "order": 3,
@@ -156,7 +156,7 @@
       "outputs": [],
       "properties": {},
       "widgets_values": [
-        "Open the full editor and import PNG/JPG/PSD (or connect one IMAGE and run once).\nSelect the fabric, correct the mask, draw course guides, choose a style.\nApply to node, close the editor, then queue this independent workflow.\nSaveImage writes the finished RGB image and a separate RGBA fabric layer.\nExport guide PSD from the editor. No diffusion model, upscaler or workbench extension is required.\nFor matching standalone output, keep Dark adaptation OFF."
+        "Open the full editor and import PNG/JPG/PSD (or connect one IMAGE and run once).\nSelect the fabric, correct the mask, draw course guides, choose a style.\nApply to node, close the editor, then queue this independent workflow.\nSaveImage writes the finished RGB image and a separate RGBA fabric layer.\nSelect GPU or CPU at the top of the editor; use CPU for exact upstream comparison.\nLeaving the editor releases model caches while retaining the draft and computed depth.\nExport guide PSD from the editor. No diffusion model, upscaler or workbench extension is required.\nFor matching standalone output, keep Dark adaptation OFF."
       ]
     }
   ],
