@@ -2,7 +2,7 @@
 
 # Independent ComfyUI integration
 
-This hosts the existing Stocking Texture Tool editor inside ComfyUI and provides an independent fabric-repair workflow. The original algorithms and browser assets are preserved as a fixed, unmodified dependency in `upstream/stocking/`, pinned to `f74c8ac0190ec43b2cdfcb13db86f35a83283311`. The MIT license and original attribution continue to apply. This adapter is maintained independently; the upstream project does not maintain or endorse this integration.
+This hosts the existing Stocking Texture Tool editor inside ComfyUI and provides an independent fabric-repair workflow. The original algorithms and browser assets are preserved as a fixed, unmodified dependency in `upstream/stocking/`, pinned to `e72a262bd917924bc82d45f19992344f2680a303`. The MIT license and original attribution continue to apply. This adapter is maintained independently; the upstream project does not maintain or endorse this integration.
 
 **中文快速上手：** 将本仓库放入 `ComfyUI/custom_nodes/stocking-texture-comfyui`，在运行 ComfyUI 的 Python 环境中补齐本目录 `requirements.txt` 的依赖，重启后载入[独立工作流](examples/stocking-repair.json)。打开完整编辑器，导入图片、修正选区、画走向，再“应用到节点”并执行工作流。SAM/深度权重需按 [MODEL_SOURCES.json](MODEL_SOURCES.json) 事先放置；手绘选区无需 SAM 权重。请勿同时安装另一份同名节点。
 

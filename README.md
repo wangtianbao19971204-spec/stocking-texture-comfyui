@@ -12,7 +12,7 @@
 
 ## 固定依赖与升级
 
-上游固定提交：`f74c8ac0190ec43b2cdfcb13db86f35a83283311`。原始 Git blob 的拷贝位于 `integrations/comfyui/upstream/stocking/`；[UPSTREAM.json](integrations/comfyui/UPSTREAM.json) 记录每个源文件的 SHA256。没有浮动引用，无需 submodule。`vendor/` 仅提供独立模块命名空间及本地 i18n 适配，不改原版源文件。
+上游固定提交：`e72a262bd917924bc82d45f19992344f2680a303`。原始 Git blob 的拷贝位于 `integrations/comfyui/upstream/stocking/`；[UPSTREAM.json](integrations/comfyui/UPSTREAM.json) 记录每个源文件的 SHA256。没有浮动引用，无需 submodule。`vendor/` 仅提供独立模块命名空间及本地 i18n 适配，不改原版源文件。
 
 维护者升级时，先单独取得上游对象，再显式指定完整 SHA：
 
