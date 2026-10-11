@@ -27,7 +27,7 @@ Alternatively connect a single IMAGE and run the node once to supply its editor 
 | Pixel brush/eraser, regions, split/trace/auto-split/merge, undo/redo | Original Document operations and editor controls |
 | Course guides, mirroring, manual dividers and depth walls | Original solve and editing behavior |
 | Depth, bright, even and PSD-painted sparkles; color exclusion | Original look controls and rendering |
-| Moire effect switch, strength and area; updated oily continuity across occlusions | Upstream `f74c8ac`; moire defaults off and requires depth, including for export and node execution |
+| Moire effect switch, strength and area; updated oily continuity across occlusions | Pinned upstream `e72a262bd917924bc82d45f19992344f2680a303`; moire defaults off and requires depth, including for export and node execution |
 | Preset save/replace/load/undo-load/delete | Per-ComfyUI-user storage |
 | Live full/split/100%/200%/problem previews | Original UI adapted to ComfyUI routes |
 | PNG/JPG/PSD input, finished PNG, RGBA fabric, guide PSD | Browser upload/download; PSD can restore artwork and guides |
@@ -74,3 +74,5 @@ Drafts/presets/exports live in the current ComfyUI user's `stocking_texture` dir
 `ComfyUI/user/<current-user>/stocking_texture/exports/` and `drafts/` are temporary storage. Creating an editor session removes adapter-owned files older than 7 days unless any open session references them. Recently written files and a draft currently being reopened are retained. Set `STOCKING_STUDIO_RETENTION_DAYS` before starting ComfyUI to change the number of days; `0` disables cleanup. Only direct PNG/PSD exports and JSON drafts are considered; unknown files and subdirectories are preserved. Preferences/presets are never expired.
 
 `ComfyUI/input/stocking_studio/assets/` contains SHA256-named original images and depth arrays referenced by saved workflow JSON. **Assets are never deleted automatically.** Back up this directory together with workflows, and use the folder's Properties to inspect its size. For manual cleanup, first close the editors, retain a backup, and check every workflow and draft you intend to keep for `asset` and `depth_asset` references. Move only confirmed unreferenced files to a recoverable archive; do not clear the folder merely because an editor session ended. Guide PSD is an additional portable export, not a replacement for all workflow settings.
+
+The iframe embeds trusted same-origin code with both `allow-scripts` and `allow-same-origin`; it is **not a security sandbox**. Exported text files use LF via `.gitattributes`, including under Windows `core.autocrlf=true`. The `/api/ping` version is derived from the pinned `UPSTREAM.json` commit.
